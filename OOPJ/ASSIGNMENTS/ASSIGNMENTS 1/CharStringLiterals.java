@@ -1,0 +1,23 @@
+public class CharStringLiterals {
+    public static void main(String[] args) {
+        // Character literals
+        char charLiteral = 'A';
+        char anotherChar = 'Z';
+        
+        // String literals
+        String stringLiteral = "Hello, Java!";
+        
+        // Display characters and their ASCII values
+        System.out.println("Character: " + charLiteral + " | ASCII: " + (int) charLiteral);
+        System.out.println("Character: " + anotherChar + " | ASCII: " + (int) anotherChar);
+        
+        // Display string literal
+        System.out.println("String Literal: " + stringLiteral);
+        
+        // Display ASCII values of each character in the string
+        System.out.print("ASCII values of string characters: ");
+        for (char ch : stringLiteral.toCharArray()) {
+            System.out.print((int) ch + " ");
+        }
+    }
+}
